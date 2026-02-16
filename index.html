@@ -3,74 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050505">
     <title>TCDS | Canon Operacional TRL-9</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-        :root { --bg: #0a0a0a; --text: #e0e0e0; --accent: #00ff9d; --alert: #ff3333; }
-        body { font-family: 'Courier New', monospace; background: var(--bg); color: var(--text); max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        h1, h2, h3 { border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .badge { background: #222; padding: 5px 10px; border: 1px solid var(--accent); color: var(--accent); font-size: 0.8em; text-decoration: none; }
-        .alert-box { border: 1px solid var(--alert); padding: 15px; margin: 20px 0; background: rgba(255, 51, 51, 0.1); }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .doi-link { font-size: 0.9em; color: #888; }
+        :root {
+            --bg: #050505;
+            --panel: #0a0c10;
+            --border: #1e2329;
+            --text-main: #e6edf3;
+            --text-dim: #8b949e;
+            --accent-cyan: #00f0ff;
+            --accent-green: #00ff9d;
+            --alert: #ff3333;
+            --font-ui: 'Inter', sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+        }
+
+        body {
+            font-family: var(--font-ui);
+            background: var(--bg);
+            color: var(--text-main);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            background-image: radial-gradient(#1a1f29 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* HEADER */
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: var(--font-code);
+            font-size: 2rem;
+            margin: 0 0 10px 0;
+            background: linear-gradient(90deg, #fff, var(--text-dim));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: var(--accent-cyan);
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* BADGES & STATUS */
+        .status-bar {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+        }
+
+        .badge {
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--accent-green);
+            padding: 4px 10px;
+            border: 1px solid var(--accent-green);
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .badge:hover {
+            background: var(--accent-green);
+            color: #000;
+        }
+
+        .live-indicator {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-green);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+
+        /* ALERT BOX */
+        .alert-box {
+            border-left: 4px solid var(--alert);
+            background: rgba(255, 51, 51, 0.05);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.9rem;
+            color: #ffaaaa;
+        }
+
+        /* GRID SYSTEM */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.2s, border-color 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            font-family: var(--font-code);
+            color: var(--accent-cyan);
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+
+        .doi-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            border-top: 1px solid #1e2329;
+            padding-top: 10px;
+            width: 100%;
+        }
+
+        .doi-link a {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+        .doi-link a:hover { color: var(--accent-cyan); }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+            text-align: center;
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
     </style>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
-      "@type": "Dataset",
-      "name": "TCDS — Canon Operacional TRL9",
+      "@type": "CollectionPage",
+      "name": "TCDS — Canon Operacional TRL-9",
+      "description": "Repositorio central de activos científicos validados de la Teoría Cromodinámica Sincrónica.",
       "url": "https://geozunac3536-jpg.github.io/Indice-de-DOI/",
-      "identifier": "10.5281/zenodo.17848365",
-      "creator": { "@type": "Person", "name": "Genaro Carrasco Ozuna" }
+      "creator": { "@type": "Person", "name": "Genaro Carrasco Ozuna" },
+      "hasPart": [
+        {
+          "@type": "ScholarlyArticle",
+          "name": "El Sincronón (σ) y la Nucleación",
+          "identifier": "10.5281/zenodo.17847894"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Dualidad Energía Oscura vs. Sincronón",
+          "identifier": "10.5281/zenodo.17848030"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "TCDS-OmniKernel",
+          "codeRepository": "https://github.com/geozunac3536-jpg/TCDS-OmniKernel"
+        }
+      ]
     }
     </script>
 </head>
 <body>
 
     <header>
-        <h1>PROYECTO TCDS: ESTATUS TRL-9</h1>
-        <p><strong>ARQUITECTURA DE SOBERANÍA CAUSAL & ANTICIPACIÓN SÍSMICA</strong></p>
-        <p>
-            <a href="https://doi.org/10.5281/zenodo.17848365" class="badge">DOI MAESTRO: 10.5281/zenodo.17848365</a>
-            <span class="badge">ESTADO: OPERATIVO</span>
-        </p>
+        <h1>PROYECTO TCDS: OMNIKERNEL</h1>
+        <div class="subtitle">ARQUITECTURA DE SOBERANÍA CAUSAL & ANTICIPACIÓN SÍSMICA</div>
+        
+        <div class="status-bar">
+            <div class="live-indicator"></div>
+            <span>ESTADO DEL NODO: <strong>OPERATIVO (TRL-9)</strong></span>
+            <span style="flex-grow:1"></span>
+            <a href="https://doi.org/10.5281/zenodo.17848365" class="badge">DOI MAESTRO: 17848365</a>
+        </div>
     </header>
 
     <div class="alert-box">
-        <strong>⚠️ AVISO DE PROPIEDAD INTELECTUAL:</strong><br>
-        La tecnología aquí expuesta (Sincronón $\sigma$, Hunter V14, E-Veto) está protegida bajo Licencia Dual. Su uso para Seguridad Nacional o aplicaciones industriales requiere el Token de Auditoría.
+        <strong>⚠️ AVISO DE PROPIEDAD INTELECTUAL & DEFENSA:</strong><br>
+        La tecnología aquí expuesta (Sincronón $\sigma$, Hunter V14, E-Veto) está protegida bajo Licencia Dual. 
+        Su implementación en sistemas de Seguridad Nacional, Infraestructura Crítica o aplicaciones industriales requiere el 
+        <strong>Token de Auditoría</strong> (Commercial License).
     </div>
 
-    <section>
-        <h2>1. LA TRINIDAD DE VALIDACIÓN (2025)</h2>
-        <p>Documentación científica indexada en CERN/Zenodo:</p>
-        <ul>
-            <li>
-                <strong>FÍSICA FUNDAMENTAL:</strong> El Sincronón ($\sigma$) y la Nucleación.<br>
-                <span class="doi-link">DOI: <a href="https://doi.org/10.5281/zenodo.17847894">10.5281/zenodo.17847894</a></span>
-            </li>
-            <li>
-                <strong>COSMOLOGÍA:</strong> Dualidad Energía Oscura vs. Sincronón.<br>
-                <span class="doi-link">DOI: <a href="https://doi.org/10.5281/zenodo.17848030">10.5281/zenodo.17848030</a></span>
-            </li>
-            <li>
-                <strong>BIOFÍSICA:</strong> Isomorfismo Inflamación/Expansión.<br>
-                <span class="doi-link">DOI: <a href="https://doi.org/10.5281/zenodo.17848081">10.5281/zenodo.17848081</a></span>
-            </li>
-        </ul>
-    </section>
+    <main>
+        <h2 style="font-family: var(--font-code); border-bottom: 1px solid var(--border); padding-bottom:10px;">
+            1. LA TRINIDAD DE VALIDACIÓN (2025)
+        </h2>
+        <p style="color:var(--text-dim)">Documentación científica indexada inmutablemente en CERN/Zenodo:</p>
 
-    <section>
-        <h2>2. INFRAESTRUCTURA OPERATIVA (CÓDIGO)</h2>
-        <p>Acceso a los repositorios de ingeniería y bitácoras de ejecución:</p>
-        <ul>
-            <li><a href="https://github.com/geozunac3536-jpg/TCDS-OmniKernel"><strong>TCDS-OmniKernel:</strong></a> Repositorio Maestro (Python/Jupyter).</li>
-            <li><a href="https://geozunac3536-jpg.github.io/Indice-de-DOI/"><strong>Índice de DOI Completo:</strong></a> Lista de activos históricos.</li>
-        </ul>
-    </section>
+        <div class="grid">
+            <article class="card">
+                <h3>⚛️ FÍSICA FUNDAMENTAL</h3>
+                <p><strong>El Sincronón ($\sigma$) y la Nucleación.</strong><br>
+                Marco matemático que describe la cristalización de la realidad física antes de la manifestación de eventos.</p>
+                <div class="doi-link">
+                    DOI: <a href="https://doi.org/10.5281/zenodo.17847894" target="_blank">10.5281/zenodo.17847894 ↗</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>🌌 COSMOLOGÍA TCDS</h3>
+                <p><strong>Dualidad Energía Oscura vs. Sincronón.</strong><br>
+                Resolución del problema de la expansión universal mediante la fricción del sustrato ($\phi$).</p>
+                <div class="doi-link">
+                    DOI: <a href="https://doi.org/10.5281/zenodo.17848030" target="_blank">10.5281/zenodo.17848030 ↗</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>🧬 BIOFÍSICA DE SISTEMAS</h3>
+                <p><strong>Isomorfismo Inflamación/Expansión.</strong><br>
+                Aplicación de la LBCU en oncología y sistemas biológicos complejos.</p>
+                <div class="doi-link">
+                    DOI: <a href="https://doi.org/10.5281/zenodo.17848081" target="_blank">10.5281/zenodo.17848081 ↗</a>
+                </div>
+            </article>
+        </div>
+
+        <br><br>
+
+        <h2 style="font-family: var(--font-code); border-bottom: 1px solid var(--border); padding-bottom:10px;">
+            2. INFRAESTRUCTURA OPERATIVA
+        </h2>
+        
+        <div class="grid">
+            <article class="card" style="border-color: var(--accent-green);">
+                <h3 style="color: var(--accent-green);">💻 TCDS-OMNIKERNEL</h3>
+                <p>Repositorio Maestro de Ingeniería. Contiene los notebooks de Python, Jupyter y la lógica del Sincronón.</p>
+                <div class="doi-link">
+                    <a href="https://github.com/geozunac3536-jpg/TCDS-OmniKernel" target="_blank">ACCEDER AL CÓDIGO FUENTE ↗</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>📊 SIGMA PREDICTOR</h3>
+                <p>Dashboard de telemetría sísmica y análisis de bloqueo de fase ($LI$).</p>
+                <div class="doi-link">
+                    <a href="https://geozunac3536-jpg.github.io/Las-Sigma-Metrics/" target="_blank">VER DASHBOARD EN VIVO ↗</a>
+                </div>
+            </article>
+        </div>
+
+    </main>
 
     <footer>
-        <p>Motor Sincrónico de Luz (MSL) | Ciudad de México, 2025.</p>
+        <p>MOTOR SINCRÓNICO DE LUZ (MSL) | CDMX - PUEBLA - ORIZABA<br>
+        © 2025 Genaro Carrasco Ozuna. Todos los derechos reservados.</p>
     </footer>
 
 </body>
