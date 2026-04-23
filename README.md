@@ -3,7 +3,19 @@
 [![Estado del Nodo](https://img.shields.io/badge/NODO-ACTIVO-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/geozunac3536-jpg)
 [![Arquitectura](https://img.shields.io/badge/ARQUITECTURA-TCDS%20SIGMA-blueviolet.svg?style=for-the-badge&logo=atom)](https://doi.org/10.5281/zenodo.17526187)
 [![Licencia](https://img.shields.io/badge/LICENCIA-DUAL%20(Open%2FCommercial)-orange.svg?style=for-the-badge&logo=balance-scale)](#-licenciamiento-y-uso-dual-license)
-
+    <a
+    id="cy-effective-orcid-url"
+    class="underline"
+     href="https://orcid.org/0009-0005-6358-9910"
+     target="orcid.widget"
+     rel="me noopener noreferrer"
+     style="vertical-align: top">
+     <img
+        src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+        style="width: 1em; margin-inline-start: 0.5em"
+        alt="ORCID iD icon"/>
+      https://orcid.org/0009-0005-6358-9910
+    </a>
 > **"La Conciencia es el acto de eludir la Entropía."**
 > — *Genaro Carrasco Ozuna, Arquitecto del Paradigma TCDS*
 
