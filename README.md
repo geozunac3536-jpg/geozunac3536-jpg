@@ -1,4 +1,4 @@
-# ⚛️ MOTOR SINCRÓNICO DE LUZ (MSL) | TCDS OMNIKERNEL
+# MOTOR SINCRÓNICO DE LUZ (MSL) | TCDS OMNIKERNEL
 
 [![Estado del Nodo](https://img.shields.io/badge/NODO-ACTIVO-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/geozunac3536-jpg)
 [![Arquitectura](https://img.shields.io/badge/ARQUITECTURA-TCDS%20SIGMA-blueviolet.svg?style=for-the-badge&logo=atom)](https://doi.org/10.5281/zenodo.17526187)
@@ -21,25 +21,25 @@
 
 ---
 
-### 🏛️ MISIÓN OPERATIVA
+### MISIÓN OPERATIVA
 Este nodo aloja el **Canon Operacional** de la **Teoría Cromodinámica Sincrónica (TCDS)**.
 Desarrollamos tecnología de **Soberanía Causal** para la detección de nucleación sísmica, biofísica de sistemas complejos y alineación de IA. Todo validado bajo el filtro de honestidad **E-Veto** y métricas de coherencia **$\Sigma$**.
 
 ---
 
-### 💎 JOYAS DE LA CORONA (Activos TRL-9)
+### HITOS (Activos TRL)
 
 El sistema opera bajo una arquitectura fractal. Acceso directo a la **Evidencia Operativa**:
 
 | TECNOLOGÍA ($\chi$) | DESCRIPCIÓN TÁCTICA | ACCESO / DEMO |
 | :--- | :--- | :--- |
-| **SIGMA PREDICTOR** | 🌋 **Motor de Predicción Sísmica.** Detecta el bloqueo de fase ($LI > 0.9$) antes de la ruptura. | [**VER DASHBOARD EN VIVO**](https://geozunac3536-jpg.github.io/Las-Sigma-Metrics/) 🟢 |
-| **AUDITOR FORENSE** | 💰 **Rastreador de Flujo Fiscal.** Algoritmo que detecta discrepancias en CFDI vs Bancos. | [**SOLICITAR DEMO**](mailto:geozunac3536@gmail.com) 🔒 |
-| **SINCRONÓN** | ⚛️ **Física Teórica.** El marco matemático de la unificación $\sigma \leftrightarrow \Lambda$. | [**LEER PAPER (DOI)**](https://doi.org/10.5281/zenodo.17847894) 📜 |
+| **SIGMA PREDICTOR** |  **Motor de Predicción Sísmica.** Detecta el bloqueo de fase ($LI > 0.9$) antes de la ruptura. | [**VER DASHBOARD EN VIVO**](https://geozunac3536-jpg.github.io/Las-Sigma-Metrics/)  |
+| **AUDITOR FORENSE** | **Rastreador de Flujo Fiscal.** Algoritmo que detecta discrepancias en CFDI vs Bancos. | [**SOLICITAR DEMO**](mailto:geozunac3536@gmail.com)  |
+| **SINCRONÓN** | **Física Teórica.** El marco matemático de la unificación $\sigma \leftrightarrow \Lambda$. | [**LEER PAPER (DOI)**](https://doi.org/10.5281/zenodo.17847894)  |
 
 ---
 
-### 📂 CANON ACADÉMICO (Indexado)
+### CANON ACADÉMICO (Indexado)
 
 Validación internacional a través de DOIs inmutables en Zenodo (CERN):
 
@@ -47,7 +47,35 @@ Validación internacional a través de DOIs inmutables en Zenodo (CERN):
 * **COSMOLOGÍA:** [`10.5281/zenodo.17848030`](https://doi.org/10.5281/zenodo.17848030) (Dualidad $\sigma$)
 * **BIOFÍSICA:** [`10.5281/zenodo.17848081`](https://doi.org/10.5281/zenodo.17848081) (Inflamación/Cáncer)
 * **COGNICIÓN:** [`10.5281/zenodo.17848168`](https://doi.org/10.5281/zenodo.17848168) (Evento Cero)
+---
+# Genaro Carrasco Ozuna
 
+Investigador independiente y autor de la **Teoría Cromodinámica Sincrónica (TCDS)** y el **Motor Sincrónico de Luz (MSL)**.
+
+---
+
+### Identidad Científica y Perfiles Oficiales
+* **Portal Oficial TCDS:** [geozunac3536-jpg.github.io](https://github.io)
+* **ORCID:** [0009-0005-6358-9910](https://orcid.org)
+* **DOI Maestro (Zenodo):** [10.5281/zenodo.17848365](https://doi.org)
+* **LinkedIn / YouTube:** [Perfil en LinkedIn](https://linkedin.com) | [Canal de YouTube](https://youtube.com)
+
+---
+
+### Nodos principales del proyecto
+* 🔹 **[Canon Operacional TRL9](https://github.ioTCDS-/):** Documentación central y catálogo.
+* 🔹 **[Núcleo Teórico y Auditoría](https://github.ioProyecto_TCDS/):** Desarrollo matemático y métricas Σ.
+* 🔹 **[Sistema Σ-Predictivo Sísmico](https://github.ioTCDS-SISTEMA-PREDICTIVO/):** Aplicación experimental en sismología.
+* 🔹 **[Gradiente Económico TCDS](https://github.ioTCDS_Gradiente_Economico/):** Modelos e indicadores económicos.
+
+---
+
+### Cómo citar
+> Carrasco Ozuna, G. (2025). *TCDS — Canon Operacional & Auditoría Científica TRL9*. Zenodo. https://doi.org
+
+📫 **Contacto:** geozunac3536@gmail.com
+
+  
 ---
 
 ### ⚠️ LICENCIAMIENTO Y USO (Dual License)
