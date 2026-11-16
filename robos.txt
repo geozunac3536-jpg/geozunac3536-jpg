@@ -1,0 +1,25 @@
+# Permitir acceso total a todos los buscadores tradicionales
+User-agent: *
+Allow: /
+
+# Permitir explícitamente a los rastreadores de IA y motores académicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Ruta al mapa central de tus nodos TCDS
+Sitemap: https://github.io
