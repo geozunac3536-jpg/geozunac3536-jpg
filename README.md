@@ -59,7 +59,19 @@ Validación internacional a través de DOIs inmutables en Zenodo (CERN) y perfil
 * **BIOFÍSICA:** [`10.5281/zenodo.17848081`](https://doi.org) (Inflamación/Cáncer)
 * **COGNICIÓN:** [`10.5281/zenodo.17848168`](https://doi.org) (Evento Cero)
 * **Perfiles Oficiales:** [ORCID: 0009-0005-6358-9910](https://orcid.org) | [LinkedIn](https://linkedin.com) | [YouTube](https://youtube.com)
-
+<a
+    id="cy-effective-orcid-url"
+    class="underline"
+     href="https://orcid.org/0009-0005-6358-9910"
+     target="orcid.widget"
+     rel="me noopener noreferrer"
+     style="vertical-align: top">
+     <img
+        src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+        style="width: 1em; margin-inline-start: 0.5em"
+        alt="ORCID iD icon"/>
+      https://orcid.org/0009-0005-6358-9910
+    </a>
 #### Cómo citar este trabajo
 > Carrasco Ozuna, G. (2025). *TCDS — Canon Operacional & Auditoría Científica TRL9*. Zenodo. https://doi.org
 
@@ -86,3 +98,4 @@ Este ecosistema opera bajo un esquema de **Propiedad Intelectual Auditada**:
   <sub>Arquitectura TCDS auditada algorítmicamente por Motor Sigma.</sub><br>
   <sub>© 2025–2026 Genaro Carrasco Ozuna. Todos los derechos reservados.</sub>
 </div>
+
