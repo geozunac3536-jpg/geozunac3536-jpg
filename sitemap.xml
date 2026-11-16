@@ -2,22 +2,26 @@
 <urlset xmlns="http://sitemaps.org">
   <url>
     <loc>https://github.io</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://github.ioTCDS-/</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://github.ioProyecto_TCDS/</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://github.ioTCDS-SISTEMA-PREDICTIVO/</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://github.ioTCDS_Gradiente_Economico/</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://github.ioLas-Sigma-Metrics/</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 </urlset>
